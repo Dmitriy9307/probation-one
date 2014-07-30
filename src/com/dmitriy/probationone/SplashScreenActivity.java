@@ -15,6 +15,7 @@ public class SplashScreenActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_splash_screen);
+		
 	}
 	
 	@Override
@@ -22,7 +23,7 @@ public class SplashScreenActivity extends Activity {
 		super.onResume();
 		h = new Handler(){
 			public void handleMessage(android.os.Message msg) {
-				startActivity(new Intent(SplashScreenActivity.this,HomeScreen.class));
+				startActivity(new Intent(SplashScreenActivity.this,HomeScreenActivity.class));
 			};
 		};
 		h.sendEmptyMessageDelayed(0, 2000);

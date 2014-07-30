@@ -9,6 +9,7 @@
     tools:context="com.dmitriy.probationone.SplashScreenActivity$PlaceholderFragment" >
 
     <TextView
+        android:id="@+id/text_view_splash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -17,11 +18,12 @@
         android:text="@string/splash_screen" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@string/image" />"
 
 </RelativeLayout>
